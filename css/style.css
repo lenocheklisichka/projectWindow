@@ -1,1 +1,156 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.navbar-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar__logo {
+  background: url(../img/navbar/logo.png) no-repeat;
+  width: 125px;
+  height: 37px;
+}
+
+.navbar__box-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 25px;
+}
+
+.navbar__text {
+  font-size: 13px;
+  color: #0d8fe3;
+  padding-left: 20px;
+}
+
+.navbar__measurement {
+  background: url(../img/navbar/measurement.png) no-repeat;
+  width: 30px;
+  height: 30px;
+}
+
+.navbar__btn {
+  padding: 10px;
+  border: 2px solid #55a831;
+  border-radius: 10px;
+  color: #55a831;
+  background-color: transparent;
+  font-size: 12px;
+  width: 14%;
+  margin-top: 15px;
+}
+
+.navbar__box-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__span {
+  text-transform: uppercase;
+  text-align: left;
+  padding-left: 10px;
+  width: 55%;
+}
+
+.navbar__box-days {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 28px;
+}
+
+.navbar__img {
+  background: url(../img/navbar/clock.png) no-repeat;
+  width: 30px;
+  height: 30px;
+}
+
+.navbar__block {
+  padding-left: 15px;
+}
+
+.navbar__daysWeek {
+  font-size: 13px;
+}
+
+.navbar__hours {
+  font-size: 17px;
+}
+
+.navbar__mobile {
+  padding-top: 22px;
+}
+
+.navbar__phone {
+  font-size: 21px;
+}
+
+.navbar__free-call {
+  font-size: 14px;
+  color: #33a1d6;
+}
+
+.bg-priceBalconies {
+  background: url(../img/price/priceBalconies.png) no-repeat;
+  width: 100%;
+  height: 712px;
+}
+
+@font-face {
+  font-family: 'Open Sans Semibold';
+  src: url("../fonts/OpenSans-SemiBold.eot");
+  src: url("../fonts/OpenSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-SemiBold.woff") format("woff"), url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url("../fonts/OpenSans-Bold.eot");
+  src: url("../fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans Regular';
+  src: url("../fonts/OpenSans-Regular.eot");
+  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans Condensed Bold';
+  src: url("../fonts/OpenSansCondensed-Bold.eot");
+  src: url("../fonts/OpenSansCondensed-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansCondensed-Bold.woff") format("woff"), url("../fonts/OpenSansCondensed-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/*# sourceMappingURL=style.css.map */
