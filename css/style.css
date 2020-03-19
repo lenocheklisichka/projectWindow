@@ -1,20 +1,10 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-h1, h2, h3 {
-  margin: 0;
-}
-
-img {
-  width: 100%;
 }
 
 .container {
-  max-width: 950px;
+  max-width: 1000px;
   margin: auto;
 }
 
@@ -44,8 +34,9 @@ img {
 }
 
 .navbar__text {
-  font-size: 13px;
-  color: #0d8fe3;
+  font-family: 'Open Sans Regular', sans-serif;
+  font-size: 11px;
+  color: #44b2e5;
   padding-left: 20px;
 }
 
@@ -61,8 +52,8 @@ img {
   border-radius: 10px;
   color: #55a831;
   background-color: transparent;
-  font-size: 12px;
-  width: 16%;
+  font-size: 11px;
+  width: 14%;
   margin: 15px 0;
 }
 
@@ -80,6 +71,7 @@ img {
   text-align: left;
   padding-left: 10px;
   width: 55%;
+  font-family: 'Open Sans Bold', sans-serif;
 }
 
 .navbar__box-days {
@@ -100,11 +92,13 @@ img {
 }
 
 .navbar__daysWeek {
-  font-size: 13px;
+  font-size: 12px;
+  font-family: 'Open Sans Regular', sans-serif;
 }
 
 .navbar__hours {
-  font-size: 17px;
+  font-size: 15px;
+  font-family: 'Open Sans Semibold', sans-serif;
 }
 
 .navbar__mobile {
@@ -124,13 +118,20 @@ img {
 }
 
 .navbar__phone {
-  font-size: 21px;
+  font-size: 19px;
   padding-left: 5px;
+  font-family: 'Open Sans Bold', sans-serif;
 }
 
 .navbar__free-call {
-  font-size: 14px;
+  font-size: 13px;
   color: #33a1d6;
+  font-family: 'Open Sans Regular', sans-serif;
+  padding-left: 25px;
+}
+
+img {
+  width: 100%;
 }
 
 .bg-priceBalconies {
@@ -142,32 +143,28 @@ img {
 
 @font-face {
   font-family: 'Open Sans Semibold';
-  src: url("../fonts/OpenSans-SemiBold.eot");
-  src: url("../fonts/OpenSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-SemiBold.woff") format("woff"), url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
+  src: url("../fonts/OpenSans-SemiBold.eot"), url("../fonts/OpenSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-SemiBold.woff") format("woff"), url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Open Sans Bold';
-  src: url("../fonts/OpenSans-Bold.eot");
-  src: url("../fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype");
+  src: url("../fonts/OpenSans-Bold.eot"), url("../fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Open Sans Regular';
-  src: url("../fonts/OpenSans-Regular.eot");
-  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  src: url("../fonts/OpenSans-Regular.eot"), url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: 'Open Sans Condensed Bold';
-  src: url("../fonts/OpenSansCondensed-Bold.eot");
-  src: url("../fonts/OpenSansCondensed-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansCondensed-Bold.woff") format("woff"), url("../fonts/OpenSansCondensed-Bold.ttf") format("truetype");
+  src: url("../fonts/OpenSansCondensed-Bold.eot"), url("../fonts/OpenSansCondensed-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansCondensed-Bold.woff") format("woff"), url("../fonts/OpenSansCondensed-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -182,16 +179,17 @@ img {
 }
 
 .price__title {
-  font-size: 25px;
+  font-size: 21px;
 }
 
 .price__subtitle {
-  font-size: 50px;
+  font-size: 47px;
   padding-top: 30px;
 }
 
 .price__item {
   padding-top: 90px;
+  font-family: 'Open Sans Bold', sans-serif;
 }
 
 .price__disk {
@@ -231,7 +229,8 @@ img {
 }
 
 .price__text {
-  font-size: 10px;
+  font-size: 11px;
+  font-family: 'Open Sans Condensed Bold', sans-serif;
   color: #ffffff;
   margin-top: 20px;
   text-align: center;
@@ -262,39 +261,45 @@ img {
 }
 
 .price__recordingbox {
-  font-size: 20px;
+  font-size: 15px;
+  font-family: 'Open Sans Bold', sans-serif;
   line-height: 25px;
   padding-bottom: 10px;
 }
 
 .price__recording {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .price__form {
   border-radius: 10px;
-  padding: 13px;
+  padding: 14px;
   text-align: center;
-  margin-top: 10px;
-  font-size: 15px;
+  margin-top: 14px;
+  font-size: 10px;
+  width: 75%;
+  font-family: 'Open Sans Regular', sans-serif;
   border: 1px solid #d7d7d7;
   outline: none;
 }
 
 .price__yourdata {
-  font-size: 10px;
+  font-size: 8px;
+  font-family: 'Open Sans Regular', sans-serif;
   padding-top: 10px;
+  color: #c2c2c2;
 }
 
 .price__btn {
   background: -webkit-gradient(linear, left top, left bottom, from(#ffeb25), to(#ffb803));
   background: linear-gradient(to bottom, #ffeb25, #ffb803);
-  padding: 20px 26px;
+  padding: 18px 28px;
   border-radius: 10px;
-  margin-top: 10px;
+  margin-top: 14px;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 15px;
   border: 1px solid #ffc600;
+  font-family: 'Open Sans Condensed Bold', sans-serif;
 }
 
 .price__btn:hover {
