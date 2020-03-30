@@ -38,6 +38,18 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'icomoon';
+  src: url('fonts/icomoon.eot?3d9tzq');
+  src: url('fonts/icomoon.eot?3d9tzq#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?3d9tzq') format('truetype'),
+    url('fonts/icomoon.woff?3d9tzq') format('woff'),
+    url('fonts/icomoon.svg?3d9tzq#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
 @mixin semibold {
   font-family: 'Open Sans Semibold', sans-serif;
 }

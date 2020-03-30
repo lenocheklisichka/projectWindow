@@ -4,8 +4,8 @@
     justify-content: space-between
   &__logo
     background: url(../img/navbar/logo.png) no-repeat
-    width: 125px
-    height: 37px
+    width: 110px
+    height: 36px
   &__box-logo
     display: flex
     align-items: center
@@ -15,19 +15,23 @@
     font-size: 11px
     color: #44b2e5
     padding-left: 20px
+    width: 193px
   &__measurement
     background: url(../img/navbar/measurement.png) no-repeat
-    width: 30px
-    height: 30px
+    width: 23px
+    height: 23px
   &__btn
     padding: 10px
     border: 2px solid #55a831
     border-radius: 10px
     color: #55a831
     background-color: transparent
-    font-size: 11px
-    width: 14%
+    width: 130px
+    height: 55px
     margin: 15px 0
+  &__btn:hover
+    border: 3px solid #55a831
+    cursor: pointer
   &__box-btn
     display: flex
     align-items: center
@@ -36,40 +40,70 @@
     text-align: left
     padding-left: 10px
     width: 55%
+    font-size: 10px
     font-family: 'Open Sans Bold', sans-serif
   &__box-days
     display: flex
     padding: 28px 0
-  &__img
-    background: url(../img/navbar/clock.png) no-repeat
-    width: 30px
-    height: 30px
+    align-items: center
+  &__icon-access_timequery_builderschedule:before
+    content: "\1f554"
   &__block
+    width: 104px
     padding-left: 15px
   &__daysWeek
-    font-size: 12px
+    font-size: 13px
     font-family: 'Open Sans Regular', sans-serif
   &__hours
-    font-size: 15px
+    font-size: 17px
     font-family: 'Open Sans Semibold', sans-serif
   &__mobile
-    padding: 22px 0
-  &__tel
-    background: url(../img/navbar/phone.png) no-repeat
-    width: 17px
-    height: 17px
-  &__boxtel
     display: flex
+    padding: 22px 0
+  &__icon-phone-call:before 
+    content: "\1f4de"
+  &__box-phone
+    width: 170px
+    padding-left: 10px
   &__phone
-    font-size: 19px
-    padding-left: 5px
+    font-size: 17px
     font-family: 'Open Sans Bold', sans-serif
+    color: #333333
+    text-decoration: none
   &__free-call
-    font-size: 13px
-    color: #33a1d6
+    font-size: 12px
+    color: #0089cc
     font-family: 'Open Sans Regular', sans-serif
-    padding-left: 25px
-    
+@media (max-width: 950px)
+  .navbar
+    &-wrap
+      justify-content: space-around
+    &__btn
+      display: none
+    &__box-days
+      display: none
+@media (max-width: 620px)
+  .navbar
+    &__text
+      display: none
+@media (max-width: 400px)     
+  .navbar
+    &-wrap
+      justify-content: space-between
+    &__logo
+      background: url(../img/navbar/logomedia.png) no-repeat
+      width: 90px
+      height: 29px
+    &__phone
+      font-size: 14px
+    &__free-call
+      font-size: 9px
+@media (max-width: 360px)
+  .navbar
+    &__mobile
+      display: none
+
+      
      
 
 
