@@ -1,175 +1,154 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Остекление балконов и лоджий</title>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-  </head>
 
-  <body>
-    <header class="header">
-      <div class="navbar">
-        <div class="container">
-          <div class="navbar-wrap">
-            <div class="navbar__box-logo">
-              <a href="" class="navbar__logo"></a>
-              <p class="navbar__text">
-                Остекление балконов и лоджий в Москве и Московской области
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Остекление балконов и лоджий</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="js/form_validate.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="navbar">
+      <div class="container">
+        <div class="navbar-wrap">
+          <div class="navbar__box-logo">
+            <a href="" class="navbar__logo"></a>
+            <p class="navbar__text">
+              Остекление балконов и лоджий в Москве и Московской области
+            </p>
+          </div>
+          <button type="button" class="navbar__btn">
+            <div class="navbar__box-btn">
+              <div class="navbar__measurement"></div>
+              <p class="navbar__span">Вызвать замерщика</p>
+            </div>
+          </button>
+          <div class="navbar__box-days">
+            <span class="navbar__icon-access_timequery_builderschedule"></span>
+            <div class="navbar__block">
+              <p class="navbar__daysWeek">без выходных</p>
+              <p clas="navbar__hours">9:00 - 18:00</p>
+            </div>
+          </div>
+          <div class="navbar__mobile">
+            <span class="navbar__icon-phone-call"></span>
+            <div class="navbar__box-phone">
+              <a href="tel:+7 (495) 646-61-71" class="navbar__phone">+7 (495) 646-61-71</a>
+              <a href="" class="navbar__free-call">Заказать обратный звонок</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--/.header-->
+  <section class="bg-priceBalconies">
+    <div class="container">
+      <div class="price__box">
+        <div class="price__block_1">
+          <div class="price__item">
+            <h1 class="price__title">Остекление балконов "под ключ"</h1>
+            <h1 class="price__subtitle">за 12 800 рублей!</h1>
+          </div>
+          <div class="price__boxitem">
+            <div class="price__disk">
+              <div class="price__img_1"></div>
+              <p class="price__text">
+                Высокое<br />
+                качество
               </p>
             </div>
-            <button type="button" class="navbar__btn">
-              <div class="navbar__box-btn">
-                <div class="navbar__measurement"></div>
-                <p class="navbar__span">Вызвать замерщика</p>
-              </div>
+            <div class="price__disk">
+              <div class="price__img_2"></div>
+              <p class="price__text">
+                Быстрый<br />
+                монтаж
+              </p>
+            </div>
+            <div class="price__disk price__img">
+              <div class="price__img_3"></div>
+              <p class="price__text">
+                Гарантия<br />
+                3 года
+              </p>
+            </div>
+            <div class="price__disk price__img">
+              <div class="price__img_4"></div>
+              <p class="price__text">
+                Вывоз<br />
+                мусора
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="forma">
+          <form action="" method="POST" class="form-box">
+            <p class="recordingbox">
+              Запишитесь сегодня на<br /><span class="recording">БЕСПЛАТНЫЙ ЗАМЕР</span>
+            </p>
+            <input type="text" name="name" placeholder="Введите ваше имя" class="form" />
+            <input type="tel" id="phone" name="tel" placeholder="+7(___)___-__-__" class="form" />
+            <button type="button" class="btn-form">
+              Вызвать замерщика!
             </button>
-            <div class="navbar__box-days">
-              <span
-                class="navbar__icon-access_timequery_builderschedule"
-              ></span>
-              <div class="navbar__block">
-                <p class="navbar__daysWeek">без выходных</p>
-                <p clas="navbar__hours">9:00 - 18:00</p>
-              </div>
-            </div>
-            <div class="navbar__mobile">
-              <span class="navbar__icon-phone-call"></span>
-              <div class="navbar__box-phone">
-                <a href="tel:+7 (495) 646-61-71" class="navbar__phone"
-                  >+7 (495) 646-61-71</a
-                >
-                <a href="" class="navbar__free-call"
-                  >Заказать обратный звонок</a
-                >
-              </div>
-            </div>
-          </div>
+            <p class="yourdata">Ваши данные конфиденциальны</p>
+          </form>
         </div>
       </div>
-    </header>
-    <!--/.header-->
-    <section class="bg-priceBalconies">
-      <div class="container">
-        <div class="price__box">
-          <div class="price__block_1">
-            <div class="price__item">
-              <h1 class="price__title">Остекление балконов "под ключ"</h1>
-              <h1 class="price__subtitle">за 12 800 рублей!</h1>
-            </div>
-            <div class="price__boxitem">
-              <div class="price__disk">
-                <div class="price__img_1"></div>
-                <p class="price__text">
-                  Высокое<br />
-                  качество
-                </p>
-              </div>
-              <div class="price__disk">
-                <div class="price__img_2"></div>
-                <p class="price__text">
-                  Быстрый<br />
-                  монтаж
-                </p>
-              </div>
-              <div class="price__disk price__img">
-                <div class="price__img_3"></div>
-                <p class="price__text">
-                  Гарантия<br />
-                  3 года
-                </p>
-              </div>
-              <div class="price__disk price__img">
-                <div class="price__img_4"></div>
-                <p class="price__text">
-                  Вывоз<br />
-                  мусора
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="price__block_2">
-            <form action="" method="POST" class="price__form-box">
-              <p class="price__recordingbox">
-                Запишитесь сегодня на<br /><span class="price__recording"
-                  >БЕСПЛАТНЫЙ ЗАМЕР</span
-                >
-              </p>
-              <input
-                type="text"
-                name="name"
-                placeholder="Введите ваше имя"
-                class="price__form"
-              />
-              <input
-                type="tel"
-                name="tel"
-                placeholder="+7 (___) ___-__-__"
-                class="price__form"
-              />
-              <button type="button" class="price__btn">
-                Вызвать замерщика!
-              </button>
-              <p class="price__yourdata">Ваши данные конфиденциальны</p>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="glazing section">
-      <div class="container">
-        <h2 class="section-title">Остекление балконов и лоджий</h2>
-        <div class="glazing__block">
-          <a href="">
-            <figure class="glazing__item">
-              <img src="img/glazing/img_1.png" alt="Деревянное остекление" />
-              <p class="glazing__description">
-                Деревянное остекление
-              </p>
-            </figure>
-          </a>
-          <a href="">
-            <figure class="glazing__item">
-              <img src="img/glazing/img_2.png" alt="Алюминиевое остекление" />
-              <figcaption class="glazing__description">
-                Алюминиевое остекление
-              </figcaption>
-            </figure>
-          </a>
-          <a href="">
-            <figure class="glazing__item">
-              <img
-                src="img/glazing/img_3.png"
-                alt="Остекление пластиковыми рамами"
-              />
-              <figcaption class="glazing__description">
-                Остекление пластиковыми рамами
-              </figcaption>
-            </figure>
-          </a>
-          <a href="">
-            <figure class="glazing__item">
-              <img
-                src="img/glazing/img_4.png"
-                alt="Французское остекление (панорамное)"
-              />
-              <figcaption class="glazing__description">
-                Французское остекление (панорамное)
-              </figcaption>
-            </figure>
-          </a>
-          <a href="">
-            <figure class="glazing__item">
-              <img src="img/glazing/img_5.png" alt="Остекление с выносом" />
-              <figcaption class="glazing__description">
-                Остекление с выносом
-              </figcaption>
-            </figure>
-          </a>
-        </div>
-        <div class="glazing__box">
+  <section class="glazing section">
+    <div class="container">
+      <h2 class="section-title">Остекление балконов и лоджий</h2>
+      <div class="glazing__block">
+        <a href="">
+          <figure class="glazing__item">
+            <img src="img/glazing/img_1.png" alt="Деревянное остекление" />
+            <p class="glazing__description">
+              Деревянное остекление
+            </p>
+          </figure>
+        </a>
+        <a href="">
+          <figure class="glazing__item">
+            <img src="img/glazing/img_2.png" alt="Алюминиевое остекление" />
+            <figcaption class="glazing__description">
+              Алюминиевое остекление
+            </figcaption>
+          </figure>
+        </a>
+        <a href="">
+          <figure class="glazing__item">
+            <img src="img/glazing/img_3.png" alt="Остекление пластиковыми рамами" />
+            <figcaption class="glazing__description">
+              Остекление пластиковыми рамами
+            </figcaption>
+          </figure>
+        </a>
+        <a href="">
+          <figure class="glazing__item">
+            <img src="img/glazing/img_4.png" alt="Французское остекление (панорамное)" />
+            <figcaption class="glazing__description">
+              Французское остекление (панорамное)
+            </figcaption>
+          </figure>
+        </a>
+        <a href="">
+          <figure class="glazing__item">
+            <img src="img/glazing/img_5.png" alt="Остекление с выносом" />
+            <figcaption class="glazing__description">
+              Остекление с выносом
+            </figcaption>
+          </figure>
+        </a>
+      </div>
+      <div class="glazing__box">
         <div class="glazing__block-1">
           <div class="glazing__triangle-down glazing__triangle-down-1"></div>
           <div class="glazing__box-item">
@@ -253,6 +232,198 @@
           </ul>
         </div>
       </div>
-    </section>
-  </body>
+  </section>
+
+  <section class="section bg-order">
+    <div class="container">
+      <h2 class="section-title">Закажите отделку балкона со скидкой 60%!</h2>
+      <div class="order__box">
+        <div class="order__box-title">
+          <p class="order__block-title">Внутренняя отделка</p>
+          <p class="order__block-title">Внешняя отделка</p>
+          <p class="order__block-title">Выносное остекление</p>
+          <p class="order__block-title">Крыша на балкон</p>
+        </div>
+        <div class="order__block-order">
+          <div class="order__block">
+            <img src="img/order/image-1.png" alt="Внутренняя отделка" />
+            <div class="order__block-item">
+              <div class="order__item">
+                <img src="img/order/img-1.png" alt="Вагонка" />
+                <p class="order__title order__title1">Вагонка</p>
+                <p class="order__price-box"><span class="order__price">600 руб. кв.м.</span><br> с материалом</p>
+              </div>
+
+              <div class="order__item">
+                <img src="img/order/img-2.png" alt="Пластиковая вагонка" />
+                <p class="order__title">Пластиковая вагонка</p>
+                <p class="order__price-box"><span class="order__price">750 руб. кв.м.</span><br> с материалом</p>
+              </div>
+
+              <div class="order__item">
+                <img src="img/order/img-3.png" alt="ПВХ-панели" />
+                <p class="order__title order__title1">ПВХ-панели</p>
+                <p class="order__price-box"><span class="order__price">800 руб. кв.м.</span><br> с материалом</p>
+              </div>
+
+              <div class="order__item">
+                <img src="img/order/img-4.png" alt="Настил пола из ламината" />
+                <p class="order__title">Настил пола из ламината</p>
+                <p class="order__price-box"><span class="order__price">1250 руб. кв.м.</span><br> с материалом</p>
+              </div>
+
+              <div class="order__item">
+                <img src="img/order/img-5.png" alt="Настил пола из дерева" />
+                <p class="order__title">Настил пола из дерева</p>
+                <p class="order__price-box"><span class="order__price">1650 руб. кв.м.</span><br> с материалом</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="order__block" style="display: none;">
+            <div class="order__image">
+              <img src="img/order/image-2.png" alt="Внешняя отделка"  class="order__block-img"/>
+            </div>
+            <div class="order__box-color">
+              <p class="order__heading">Большой выбор цветов винилового сайдинга</p>
+              <div class="order__block-color">
+                <div class="order__color">
+                  <div class="order__white order__colors"></div>
+                  <p class="order__title-color">Белый</p>
+                </div>
+                <div class="order__color">
+                  <div class="order__chimney order__colors"></div>
+                  <p class="order__title-color">Дымчатый</p>
+                </div>
+                <div class="order__color">
+                  <div class="order__creamy order__colors"></div>
+                  <p class="order__title-color">Кремовый</p>
+                </div>
+                <div class="order__color">
+                  <div class="order__lemony order__colors"></div>
+                  <p class="order__title-color">Лимонный</p>
+                </div>
+                <div class="order__color">
+                  <div class="order__pink order__colors"></div>
+                  <p class="order__title-color">Розовый</p>
+                </div>
+                <div class="order__color">
+                  <div class="order__lightgreen order__colors"></div>
+                  <p class="order__title-color">Салатовый</p>
+                </div>
+                <div class="order__color">
+                  <div class="order__lightgray order__colors"></div>
+                  <p class="order__title-color">Светло-серый</p>
+                </div>
+                <div class="order__color">
+                  <div class="order__blue-gray order__colors"></div>
+                  <p class="order__title-color">Серо-голубой</p>
+                </div>
+                <div class="order__color">
+                  <div class="order__grey-green order__colors"></div>
+                  <p class="order__title-color">Серо-зеленый</p>
+                </div>
+                <div class="order__color">
+                  <div class="order__beige order__colors"></div>
+                  <p class="order__title-color">Бежевый</p>
+                </div>
+
+              </div>
+              <p class="order__price-box2"><span class="order__price">1 800 руб./м2</span><br> с материалом</p>
+            </div>
+          </div>
+
+          <div class="order__block" style="display: none;">
+          <img src="img/order/image-3.png" alt="Выносное остекление" />
+          <div class="order__box-picture">
+            <p class="order__heading">Что вам даст остекление балкона с выносом?</p>
+            <div class="order__block-picture">
+              <div class="order__picture-item">
+                <img src="img/order/arrows.png" alt="" />
+                <p class="order__text">Балкон просторнее<br> на 30-40 см</p>
+              </div>
+              <div class="order__picture-item">
+                <img src="img/order/windowssill.png" alt="" />
+                <p class="order__text">Широкий<br> подоконник</p>
+              </div>
+              <div class="order__picture-item">
+                <img src="img/order/heat.png" alt="" />
+                <p class="order__text">Дополнительная<br> теплоизоляция</p>
+              </div>
+              <p class="order__price-box2"><span class="order__price">1 800 руб./м2</span><br> с материалом</p>
+            </div>
+          </div>
+          </div>
+
+          <div class="order__block" style="display: none;">
+            <img src="img/order/image-4.png" alt="Крыша на балкон" />
+            <div class="order__box-picture">
+              <p class="order__heading">Монтаж крыши</p>
+              <div class="order__block-picture">
+                <div class="order__picture-item">
+                  <img src="img/order/img-6.png" alt="" />
+                  <p class="order__block-text">Ондулин</p>
+                </div>
+                <div class="order__picture-item">
+                  <img src="img/order/img-7.png" alt="" />
+                  <p class="order__block-text">Метоллочерепица</p>
+                </div>
+                <p class="order__price-box2"><span class="order__price">1 800 руб./м2</span><br>На деревянной обрешетке
+                </p>
+                <p class="order__price-box2"><span class="order__price">1 800 руб./м2</span><br>На металлической
+                  платформе</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="forma">
+            <form action="" method="POST" class="form-box">
+              <p class="recordingbox">
+                Запишитесь сегодня на<br /><span class="recording">БЕСПЛАТНЫЙ ЗАМЕР</span>
+              </p>
+              <input type="text" name="name" placeholder="Введите ваше имя" class="form" />
+              <input type="tel" id="tel" name="tel" placeholder="+7(___)___-__-__" class="form" />
+              <button type="button" class="btn-form">
+                Вызвать замерщика!
+              </button>
+              <p class="yourdata">Ваши данные конфиденциальны</p>
+            </form>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="works section">
+    <div class="container">
+      <h1 class="section-title">Наши работы</h1>
+      <div class="works_content">
+        <div class="works_box-img">
+          <img src="img/works/img_1.png" alt="" class="works_img-1">
+        </div>
+        <div class="works_box-img">
+          <img src="img/works/img_1.png" alt="" class="works_img-1">
+        </div>
+        <div class="works_box-img">
+          <img src="img/works/img_1.png" alt="" class="works_img-1">
+        </div>
+        <div class="works_box-img">
+          <img src="img/works/img_1.png" alt="" class="works_img-1">
+        </div>
+        <div class="works_box-img">
+          <img src="img/works/img_1.png" alt="" class="works_img-1">
+        </div>
+        <div class="works_box-img">
+          <img src="img/works/img_1.png" alt="" class="works_img-1">
+        </div>
+        <div class="works_box-img">
+          <img src="img/works/img_1.png" alt="" class="works_img-1">
+        </div>
+        <div class="works_box-img">
+          <img src="img/works/img_1.png" alt="" class="works_img-1">
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
 </html>
