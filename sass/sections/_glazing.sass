@@ -6,6 +6,9 @@
   &__item
     width: 130px
     text-align: center
+  &__item:hover
+    cursor: pointer
+    transform: scale(1.2)
   &__description
     font-size: 14px
     line-height: 1.44
@@ -13,7 +16,7 @@
     padding-top: 15px
     color: #249ae6
     text-decoration: underline
-  &__description:hover, &__description:active
+  &__description:hover
     color: #464646
     text-decoration: none
   &__box
@@ -31,6 +34,8 @@
     border-top: 4px solid #ffb903
     border-radius: 3px
     background: linear-gradient(to bottom, #fff8e7, #fff)
+  &__block-1:hover, &__block-2:hover 
+    transform: scale(1.1)
   &__triangle-down
     width: 0
     height: 0
