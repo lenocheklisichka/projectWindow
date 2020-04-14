@@ -1,0 +1,72 @@
+.share
+  &__box-bg
+    background: url(../img/share/bg-share.png) no-repeat
+    width: 100%
+    height: 500px
+    background-size: cover
+    background-position: center
+  &__content-box
+    display: flex
+    justify-content: space-between
+    max-width: 900px
+    margin: auto
+  &__content-block
+    max-width: 400px
+    margin-top: 70px
+  &__block-span
+    font-size: 35px
+    font-family: 'Open Sans Bold', sans-serif
+    color: #008cce
+    text-transform: uppercase
+  &__block-text
+    font-size: 18px
+    line-height: 1.5
+    font-family: 'Open Sans Regular', sans-serif
+    padding-top: 70px
+  &__block
+    width: 220px
+    height: 125px
+    margin-top: 70px
+    background-color: #fff
+    border: 1px solid #d1d1d1
+    border-radius: 10px
+  &__box
+    padding-top: 15px
+  &__box-title
+    font-size: 12px
+    font-family: 'Open Sans Semibold', sans-serif
+    text-transform: uppercase
+    text-align: center
+  &__box-days
+    display: flex
+    margin: auto
+    justify-content: space-around
+    width: 200px
+    padding-top: 15px
+  &__item
+    text-align: center
+    border: 1px solid #000
+    border-radius: 6px
+    width: 30px
+    height: 34px
+    font-size: 20px
+    background-color: #000
+    color: #fff
+    padding: 5px 0
+  &__item-text
+    font-size: 10px
+    font-family: 'Open Sans Semibold', sans-serif
+    padding-top: 15px
+@media (max-width: 960px)
+  .share
+    &__box-bg
+      background-position: left
+    &__content-box
+      max-width: 500px
+      text-align: center
+    &__block
+      margin: 50px auto
+@media (max-width: 745px)
+  .share
+    &__content-box
+      max-width: 300px

@@ -1,0 +1,52 @@
+.payment
+  &__title
+    text-align: center
+    font-size: 25px
+    font-family: 'Open Sans Bold', sans-serif
+  &__box-content
+    display: flex
+    justify-content: space-between
+    padding-top: 70px
+    max-width: 800px
+    margin: auto
+  &__box-item
+    display: flex
+    align-items: center
+    max-width: 400px
+  &__box-item:hover
+    transform: scale(1.2)
+    cursor: pointer
+  &__block-text
+    font-size: 15px
+    font-family: 'Open Sans Regular', sans-serif
+    padding-left: 25px
+@media (max-width: 745px)
+  .payment
+    &__box-content
+      justify-content: space-around
+      flex-wrap: wrap
+      max-width: 600px
+      padding-top: 30px
+    &__box-item
+      padding-top: 40px
+@media (max-width: 517px)
+  .payment
+    &__title
+      font-size: 20px
+@media (max-width: 500px)
+  .payment
+    &__box-content
+      flex-direction: column
+      max-width: 250px
+    &__block-text
+      padding-left: 35px
+@media (max-width: 425px)
+  .payment
+    &__title
+      font-size: 16px
+@media (max-width: 353px)
+  .payment
+    &__title
+      font-size: 13px
+    &__block-text
+      font-size: 13px

@@ -12,6 +12,10 @@ ul
   background-color: #fff
   margin-top: 80px
   border-radius: 10px
+.forma:hover
+  transform: scale(1.1)
+  cursor: pointer
+  box-shadow: 5px 14px 30px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22)
 .form-box
   text-align: center
   padding: 35px 0
@@ -42,8 +46,6 @@ ul
   border: 1px solid #ffc600
   font-family: 'Open Sans Condensed Bold', sans-serif
   outline: none
-.btn-form:hover
-  border: 2px solid #ffc600
   cursor: pointer
 .yourdata
   font-size: 8px
@@ -74,31 +76,36 @@ ul
 .section-title-color::before
   content: ''
   width: 100px
-  height: 2px
+  height: 1px
   background: radial-gradient(circle at top, #fff , #2c97cd)
   position: absolute
   margin-top: 55px
-  right: 46%
+  margin-left: 85px
 .bg-order
   background-color: #f7f7f7
 .bg-color
   background-color: #0a8ac9
+@media (max-width: 960px) 
+  .forma
+    display: none;
 @media (max-width: 700px)
   .section-title
     font-size: 20px
+@media (max-width: 600px)
+  .bg-priceBalconies
+    background-position: left
 @media (max-width: 550px)
   .section-title
     margin: auto
     font-size: 22px
     line-height: 1.7
+@media (max-width: 440px)
+  .section-title-color
+    font-size: 20px 
 @media (max-width: 410px) 
   .section-title
     font-size: 16px
-@media (max-width: 600px)
-  .bg-priceBalconies
-    background-position: left
-@media (max-width: 960px) 
-  .forma
-    display: none;
+
+
 
       
