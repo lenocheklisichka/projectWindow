@@ -12,9 +12,6 @@ ul
   background-color: #fff
   margin-top: 80px
   border-radius: 10px
-.forma:hover
-  transform: scale(1.1)
-  cursor: pointer
   box-shadow: 5px 14px 30px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22)
 .form-box
   text-align: center
@@ -38,7 +35,7 @@ ul
   outline: none
 .btn-form
   background: linear-gradient(to bottom, #ffeb25, #ffb803)
-  padding: 18px 28px
+  padding: 15px 27px
   border-radius: 10px
   margin-top: 14px
   text-transform: uppercase
@@ -47,6 +44,13 @@ ul
   font-family: 'Open Sans Condensed Bold', sans-serif
   outline: none
   cursor: pointer
+  transition: all .5s
+  box-shadow: 0 3px 4px rgba(0,0,0,.6)
+.btn-form:hover
+  background-color: #ffb803
+  background: linear-gradient(to top,#ffeb25, #ffb803);
+  transform: translateY(3px)
+  box-shadow: 0 0 1px rgba(0,0,0,.6)
 .yourdata
   font-size: 8px
   font-family: 'Open Sans Regular', sans-serif

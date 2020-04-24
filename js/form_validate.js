@@ -1,8 +1,8 @@
 $(document).ready(function () {
     $("#phone").inputmask("+7(999)999-99-99")
     $("#tel").inputmask("+7(999)999-99-99")
+    $("#form-tel").inputmask("+7(999)999-99-99")
 });
-
 
 /**
  * @license Input Mask plugin for jquery

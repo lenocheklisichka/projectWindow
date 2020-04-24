@@ -1,0 +1,60 @@
+.contacts
+  &__box
+    display: flex
+    padding-top: 90px
+    justify-content: space-between
+    width: 900px
+    margin: auto
+  &__block-map
+    background: url(../img/contacts/map.png) no-repeat
+    width: 454px
+    height: 373px
+  &__block-item
+    margin: 0 0 25px
+  &__block-item:last-child
+    margin-bottom: 0
+  &__block-contact
+    max-width: 365px
+  &__heading
+    font-size: 13px
+    margin: 0 0 10px
+    color: #008cce
+    font-family: 'Open Sans Semibold', sans-serif
+  &__text
+    font-size: 15px
+    line-height: 1.444
+    font-family: 'Open Sans Semibold', sans-serif
+    color: #000
+@media (max-width: 955px)
+  .contacts
+    &__box
+      flex-direction: column
+      width: 455px
+    &__block-contact
+      text-align: center
+      margin: auto
+      padding-top: 30px
+@media (max-width: 540px)
+  .contacts
+    &__block-map
+      background: url(../img/contacts/map_2.png) no-repeat
+      width: 360px
+      height: 295px
+      margin: auto
+    &__box
+      width: 360px
+@media (max-width: 417px)
+  .contacts
+    &__block-map
+      background: url(../img/contacts/map_3.png) no-repeat
+      width: 260px
+      height: 213px
+    &__block-contact
+      max-width: 300px
+    &__box
+      max-width: 260px
+
+
+
+
+
