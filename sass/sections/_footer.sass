@@ -1,0 +1,40 @@
+.footer
+  &__box
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 30px 0
+  &__block
+    font-size: 12px
+    font-family: 'Open Sans Regular', sans-serif
+    width: 150px
+  &__logo
+    background: url(../img/footer/logo.png) no-repeat
+    width: 110px
+    height: 33px
+  &__phone
+    font-size: 16px
+    font-family: 'Open Sans Bold', sans-serif
+  &__email
+    font-size: 12px
+    font-family: 'Open Sans Regular', sans-serif
+    color: #44aee0
+    padding-left: 35px
+@media (max-width: 500px)
+  .footer
+    &__logo
+      display: none
+@media (max-width: 350px)
+  .footer
+    &__box
+      flex-direction: column
+      text-align: center
+    &__phone
+      padding-top: 15px
+    &__email
+      padding-left: 0
+
+
+        
+  
+
