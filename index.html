@@ -7,11 +7,8 @@
   <title>Остекление балконов и лоджий</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="js/form_validate.js"></script>
   <script src="js/main.js"></script>
 </head>
-
 <body>
   <header class="header">
     <div class="navbar">
@@ -23,7 +20,7 @@
               Остекление балконов и лоджий в Москве и Московской области
             </p>
           </div>
-          <button type="button" class="navbar__btn">
+          <button type="button" id="btn" class="navbar__btn">
             <div class="navbar__box-btn">
               <div class="navbar__measurement"></div>
               <p class="navbar__span">Вызвать замерщика</p>
@@ -40,12 +37,32 @@
             <span class="navbar__icon-phone-call"></span>
             <div class="navbar__box-phone">
               <a href="tel:+7 (495) 646-61-71" class="navbar__phone">+7 (495) 646-61-71</a>
-              <a href="#" class="navbar__free-call">Заказать обратный звонок</a>
+              <a href="#" id="openModal" class="navbar__free-call">Заказать обратный звонок</a>
+              <div id="elementModal" style="display: none;">
+                <svg id="closeModal" class="modal-cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+                </svg>
+                <div id="modalForma">
+                  <form action="" method="POST" id="form" class="form-box">
+                    <p class="recordingbox">
+                      Закажите сейчас<br /><span class="recording">ОБРАТНЫЙ ЗВОНОК</span></p>
+                    <input type="text" name="username" placeholder="Введите ваше имя" id="nameForm"
+                      class="formInput field" required />
+                    <div class="error"></div>
+                    <input type="tel" name="phone" id="phoneForm" class="formInput field" />
+                    <div class="error"></div>
+                    <button type="button" id="formSubmitBtn" class="btn-form">
+                      Отправить заявку
+                    </button>
+                    <p class="yourdata">Ваши данные конфиденциальны</p>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
   </header>
   <!--/.header-->
   <section class="bg-priceBalconies">
@@ -87,15 +104,17 @@
             </div>
           </div>
         </div>
-        <div class="forma">
-          <form action="" method="POST" class="form-box">
+        <div class="boxForm">
+          <form action="" method="POST" id="form" class="form-box">
             <p class="recordingbox">
-              Запишитесь сегодня на<br /><span class="recording">БЕСПЛАТНЫЙ ЗАМЕР</span>
-            </p>
-            <input type="text" name="name" placeholder="Введите ваше имя" class="form" />
-            <input type="tel" id="phone" name="tel" placeholder="+7(___)___-__-__" class="form" />
-            <button type="button" class="btn-form">
-              Вызвать замерщика!
+              Запишитесь сегодня на<br /><span class="recording">БЕСПЛАТНЫЙ ЗАМЕР</span></p>
+            <input type="text" name="username" placeholder="Введите ваше имя" id="nameForm" class="formInput field"
+              required />
+            <div class="error"></div>
+            <input type="tel" name="phone" id="phoneForm" class="formInput field" />
+            <div class="error"></div>
+            <button type="button" id="formSubmitBtn" class="btn-form">
+              Отправить заявку
             </button>
             <p class="yourdata">Ваши данные конфиденциальны</p>
           </form>
@@ -110,39 +129,44 @@
       <div class="glazing__block">
         <a href="">
           <figure class="glazing__item">
-            <img src="img/glazing/img_1.png" alt="Деревянное остекление" /></a>
-            <p class="glazing__description">
-              Деревянное остекление
-            </p>
-          </figure>
+            <img src="img/glazing/img_1.png" alt="Деревянное остекление" />
+        </a>
+        <p class="glazing__description">
+          Деревянное остекление
+        </p>
+        </figure>
         <a href="">
           <figure class="glazing__item">
-            <img src="img/glazing/img_2.png" alt="Алюминиевое остекление" /></a>
-            <figcaption class="glazing__description">
-              Алюминиевое остекление
-            </figcaption>
-          </figure>
+            <img src="img/glazing/img_2.png" alt="Алюминиевое остекление" />
+        </a>
+        <figcaption class="glazing__description">
+          Алюминиевое остекление
+        </figcaption>
+        </figure>
         <a href="">
           <figure class="glazing__item">
-            <img src="img/glazing/img_3.png" alt="Остекление пластиковыми рамами" /></a>
-            <figcaption class="glazing__description">
-              Остекление пластиковыми рамами
-            </figcaption>
-          </figure>
+            <img src="img/glazing/img_3.png" alt="Остекление пластиковыми рамами" />
+        </a>
+        <figcaption class="glazing__description">
+          Остекление пластиковыми рамами
+        </figcaption>
+        </figure>
         <a href="">
           <figure class="glazing__item">
-            <img src="img/glazing/img_4.png" alt="Французское остекление (панорамное)" /></a>
-            <figcaption class="glazing__description">
-              Французское остекление (панорамное)
-            </figcaption>
-          </figure>
+            <img src="img/glazing/img_4.png" alt="Французское остекление (панорамное)" />
+        </a>
+        <figcaption class="glazing__description">
+          Французское остекление (панорамное)
+        </figcaption>
+        </figure>
         <a href="">
           <figure class="glazing__item">
-            <img src="img/glazing/img_5.png" alt="Остекление с выносом" /></a>
-            <figcaption class="glazing__description">
-              Остекление с выносом
-            </figcaption>
-          </figure>
+            <img src="img/glazing/img_5.png" alt="Остекление с выносом" />
+        </a>
+        <figcaption class="glazing__description">
+          Остекление с выносом
+        </figcaption>
+        </figure>
       </div>
       <div class="glazing__box">
         <div class="glazing__block-1">
@@ -235,13 +259,13 @@
       <h2 class="section-title">Закажите отделку балкона со скидкой 60%!</h2>
       <div class="order__box">
         <div class="order__box-title">
-          <p class="order__block-title">Внутренняя отделка</p>
-          <p class="order__block-title">Внешняя отделка</p>
-          <p class="order__block-title">Выносное остекление</p>
-          <p class="order__block-title">Крыша на балкон</p>
+          <p id="firstTitle" class="order__block-title1">Внутренняя отделка</p>
+          <p id="secondTitle" class="order__block-title">Внешняя отделка</p>
+          <p id="thirdTitle" class="order__block-title">Выносное остекление</p>
+          <p id="fourthTitle" class="order__block-title">Крыша на балкон</p>
         </div>
         <div class="order__block-order">
-          <div class="order__block">
+          <div id="firstBlock" class="order__block">
             <img src="img/order/image-1.png" alt="Внутренняя отделка" />
             <div class="order__block-item">
               <div class="order__item">
@@ -276,11 +300,11 @@
             </div>
           </div>
 
-          <div class="order__block" style="display: none;">
+          <div id="secondBlock" class="order__block" style="display: none;">
             <div class="order__image">
               <img src="img/order/image-2.png" alt="Внешняя отделка" class="order__block-img" />
             </div>
-            <div class="order__box-color">
+            <div class="order__block-item">
               <p class="order__heading">Большой выбор цветов винилового сайдинга</p>
               <div class="order__block-color">
                 <div class="order__color">
@@ -329,7 +353,7 @@
             </div>
           </div>
 
-          <div class="order__block" style="display: none;">
+          <div id="thirdBlock" class="order__block" style="display: none;">
             <img src="img/order/image-3.png" alt="Выносное остекление" />
             <div class="order__box-picture">
               <p class="order__heading">Что вам даст остекление балкона с выносом?</p>
@@ -351,7 +375,7 @@
             </div>
           </div>
 
-          <div class="order__block" style="display: none;">
+          <div id="fourthBlock" class="order__block" style="display: none;">
             <img src="img/order/image-4.png" alt="Крыша на балкон" />
             <div class="order__box-picture">
               <p class="order__heading">Монтаж крыши</p>
@@ -372,14 +396,17 @@
             </div>
           </div>
 
-          <div class="forma">
-            <form action="" method="POST" class="form-box">
+          <div class="boxForm">
+            <form action="" method="POST" id="form" class="form-box">
               <p class="recordingbox">
-                Запишитесь сегодня на<br /><span class="recording">БЕСПЛАТНЫЙ ЗАМЕР</span>
-              </p>
-              <input type="text" name="name" placeholder="Введите ваше имя" class="form" />
-              <input type="tel" id="tel" name="tel" placeholder="+7(___)___-__-__" class="form" />
-              <input type="button" class="btn-form" value="Вызвать замерщика!">
+                Запишитесь сегодня на<br /><span class="recording">БЕСПЛАТНЫЙ ЗАМЕР</span></p>
+              <input type="text" name="username" placeholder="Введите ваше имя" id="nameForm" class="formInput field"
+                required />
+              <div class="error"></div>
+              <input type="tel" name="phone" id="phoneForm" class="formInput field" />
+              <div class="error"></div>
+              <button type="button" id="formSubmitBtn" class="btn-form">
+                Отправить заявку
               </button>
               <p class="yourdata">Ваши данные конфиденциальны</p>
             </form>
@@ -538,14 +565,17 @@
             </div>
           </div>
         </div>
-        <div class="forma">
-          <form action="" method="POST" class="form-box">
+        <div class="boxForm">
+          <form action="" method="POST" id="form" class="form-box">
             <p class="recordingbox">
-              Запишитесь сегодня на<br /><span class="recording">БЕСПЛАТНЫЙ ЗАМЕР</span>
-            </p>
-            <input type="text" name="name" placeholder="Введите ваше имя" class="form" />
-            <input type="tel" id="form-tel" name="tel" placeholder="+7(___)___-__-__" class="form" />
-            <input type="button" class="btn-form" value="Вызвать замерщика!">
+              Запишитесь сегодня на<br /><span class="recording">БЕСПЛАТНЫЙ ЗАМЕР</span></p>
+            <input type="text" name="username" placeholder="Введите ваше имя" id="nameForm" class="formInput field"
+              required />
+            <div class="error"></div>
+            <input type="tel" name="phone" id="phoneForm" class="formInput field" />
+            <div class="error"></div>
+            <button type="button" id="formSubmitBtn" class="btn-form">
+              Отправить заявку
             </button>
             <p class="yourdata">Ваши данные конфиденциальны</p>
           </form>
@@ -587,7 +617,8 @@
 
   <section class="questions__backdrop-content">
     <div class="container">
-      <p class="questions__box">Остались вопросы?<a href="#" class="questions__link">Спросите у нашего специалиста!</a></p>
+      <p class="questions__box">Остались вопросы?<a href="#" class="questions__link">Спросите у нашего специалиста!</a>
+      </p>
     </div>
   </section>
 
